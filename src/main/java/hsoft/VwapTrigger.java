@@ -2,15 +2,14 @@ package hsoft;
 
 import com.hsoft.codingtest.*;
 import org.apache.log4j.ConsoleAppender;
-import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+
 
 public class VwapTrigger {
 
   private static final Logger logger = Logger.getLogger("TEST_PRODUCT");
 
   public static void main(String[] args) {
-
     /**
      * Listener for all new transactions.
      */
@@ -44,7 +43,7 @@ public class VwapTrigger {
 
   /**
    * Compare values of fair and VWAP to compare them and log them.
-   * @param pi
+   * @param pi Product info
    */
   public static void logValueHigherThanFair(ProductInfo pi){
     if(pi.getVWAPValue() > pi.getFairValue()){
@@ -56,5 +55,4 @@ public class VwapTrigger {
     }
 
   }
-
 }

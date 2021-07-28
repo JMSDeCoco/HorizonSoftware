@@ -68,7 +68,7 @@ public class ProductInfo {
 
     /**
      * Get product info and replace if already exist or create new.
-     * @param productId
+     * @param productId the product ID
      * @return
      */
     public static ProductInfo getProductInfo(String productId) {
